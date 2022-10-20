@@ -8,10 +8,12 @@ function updateDisplay() {
         let hour = date.getHours();
         let min = date.getMinutes();
         let sec = date.getSeconds();
+        let amOrPm = hour < 13 ? 'AM' : 'PM';
+        hour = hour - 12;
         hour = formatZero(hour);
         min = formatZero(min);
         sec = formatZero(sec);
-        return `${hour}:${min}:${sec}`;
+        return `${hour}:${min}:${sec} ${amOrPm}`;
     }
     function formatZero(time) {
         time = time.toString();

@@ -20,4 +20,5 @@ body {
     background-color: rgba(255, 255, 255, .4);
     border-radius: 100px;
     box-shadow: 5px 10px 15px rgba(255, 255, 255, 0.618);
+    user-select: none;
 }
